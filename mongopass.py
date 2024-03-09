@@ -1,0 +1,1 @@
+mongopass = "mongodb+srv://cboiteux:bxXhBVy5wS5qb5Pn@cluster0.4vyuo5v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
