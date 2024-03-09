@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(52, 52, 61);
+    margin: 0;
+}
+.nav-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(69, 69, 69);
+    box-shadow: 0px 0px 20px 0px black;
+}
+.nav-icon {
+    width: 50px;
+}
+nav > div > div > span {
+    color: white;
+    font-size: larger;
+}
+.home-crop-img {
+    width: 100vw;
+}
