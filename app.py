@@ -7,23 +7,26 @@ base_dir = os.path.abspath(os.path.dirname(__file__))
 
 analytics_data = json.load('collection.json')
 
+maps_api_key = 'AIzaSyDyw8uZxBN17mPkDiobQaZyB0kQcJgg8M0'
+maps_embed_api = 'AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA'
+
 @app.route('/', methods=['GET'])
 def home():
     return "Hello World!"
 
 @app.route('/map', methods=['GET'])
 def get_map():
-    return "map"
+    return 
 
 @app.route('/map/<location>', methods=['POST'])
 def post_map():
     return "map"
 
-@app.route('/analytics/<user>', methods=['GET'])
+@app.route('/analytics/', methods=['GET'])
 def get_analytics():
     return jsonify(analytics_data)
 
-@app.route('/analytics/{id}', methods=['POST'])
+@app.route('/analytics/<user>', methods=['POST'])
 def post_analytics():
     return "analytics"
 
