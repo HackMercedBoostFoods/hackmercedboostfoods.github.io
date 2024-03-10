@@ -3,9 +3,9 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(express.static('UI'));
-app.use('/css', express.static(__dirname + "UI/CSS"));
-app.use('/html', express.static(__dirname + "UI/HTML"));
-app.use('/img', express.static(__dirname + "UI/images"));
+app.use('/css', express.static(__dirname + "/UI/CSS"));
+app.use('/html', express.static(__dirname + "/UI/HTML"));
+app.use('/img', express.static(__dirname + "/UI/images"));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/UI/HTML/index.html');
