@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <nav>
@@ -23,15 +24,18 @@
         </div>
     </nav>
 
-    <label for="location" type="text"></label>
+    <label for="location" type="text">Location (City, State)</label>
     <input id="location">
-    <label for="farm-name"></label>
+    <label for="farm-name">Farm Name</label>
     <input id="farm-name" type="text">
+    <button id="submit-map" onclick="submitMap()">Submit</button>
 
     <script>
-        let map_embed_key = 'AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA';
-        let map_uri = 'https://www.google.com/maps/embed/v1/place?key=' + map_embed_key + "&q=" + document.getElementById('farm-name').value.replace(' ', '+') + document.getElementById('location').value.replace(',', '+');
-        document.getElementById('map').src = map_uri;
+        function submitMap() {
+            let map_embed_key = 'AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA';
+            let map_uri = 'https://www.google.com/maps/embed/v1/place?key=' + map_embed_key + "&q=" + document.getElementById('farm-name').value.replace(' ', '+') + document.getElementById('location').value.replace(',', '+');
+            document.getElementById('map').src = map_uri;
+        }
     </script>
     <iframe
         width="600"
