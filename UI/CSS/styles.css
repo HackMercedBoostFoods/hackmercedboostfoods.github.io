@@ -70,3 +70,7 @@ body {
 .team>div>p {
     color: rgb(212, 212, 212);
 }
+
+a:hover {
+    color: blue;
+}
