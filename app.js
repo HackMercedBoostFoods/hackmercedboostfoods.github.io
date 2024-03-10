@@ -15,35 +15,35 @@ app.post('/', (req, res) => {
     
 });
 
-app.get('/map', (req, res) => {
+app.get('/map.html', (req, res) => {
     res.sendFile(__dirname + '/UI/HTML/map.html');
 });
 
-app.post('/map', (req, res) => {
+app.post('/map.html', (req, res) => {
     
 });
 
-app.get('/analytics', (req, res) => {
+app.get('/analytics.html', (req, res) => {
     res.sendFile(__dirname + '/UI/HTML/analytics.html');
 });
 
-app.post('/analytics', (req, res) => {
+app.post('/analytics.html', (req, res) => {
 
 });
 
-app.get('/settings', (req, res) => {
+app.get('/settings.html', (req, res) => {
     res.sendFile(__dirname + '/UI/HTML/settings.html');
 });
 
-app.post('/settings', (req, res) => {
+app.post('/settings.html', (req, res) => {
 
 });
 
-app.get('/sign-in', (req, res) => {
+app.get('/sign-in.html', (req, res) => {
     res.sendFile(__dirname + '/UI/HTML/sign-in.html');
 });
 
-app.post('/sign-in', (req, res) => {
+app.post('/sign-in.html', (req, res) => {
 
 });
 
