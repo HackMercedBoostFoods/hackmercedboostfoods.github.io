@@ -22,14 +22,28 @@
             </div>
         </div>
     </nav>
+
+    <label for="location" type="text"></label>
+    <input id="location">
+    <label for="farm-name"></label>
+    <input id="farm-name" type="text">
+
+    <script>
+        let map_embed_key = 'AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA';
+        let map_uri = 'https://www.google.com/maps/embed/v1/place?key=' + map_embed_key + "&q=" + document.getElementById('farm-name').value.replace(' ', '+') + document.getElementById('location').value.replace(',', '+');
+        document.getElementById('map').src = map_uri;
+    </script>
     <iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA&q=Space+Needle,Seattle+WA">
-</iframe>
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAaOICRptEhBPObpkgZ9U9tOZJUppxlbYA&q=Tri+Ban+Farms,Merced+CA"
+        id="map">
+    </iframe>
+
+
 </body>
 </html>
